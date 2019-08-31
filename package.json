@@ -1,0 +1,27 @@
+{
+  "name": "domain-checker",
+  "version": "1.0.0",
+  "description": "a node cli tool to check if a list of domains is reachable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miku86/node-domain-checker.git"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "domain-checker"
+  ],
+  "author": "miku86",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/miku86/node-domain-checker/issues"
+  },
+  "homepage": "https://github.com/miku86/node-domain-checker#readme",
+  "dependencies": {
+    "follow-redirects": "^1.8.1"
+  }
+}

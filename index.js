@@ -1,6 +1,6 @@
 const fs = require('fs');
 const readline = require('readline');
-const http = require('http');
+const { https } = require('follow-redirects');
 const url = require('url');
 
 console.log('Welcome to the Domain Checker');
@@ -8,14 +8,8 @@ const FILE_NAME = process.argv[2];
 
 // check if domain is reachable
 const isUrlReachable = (url) => {
-  const { hostname } = new URL(url);
-
-  const options = {
-    hostname
-  };
-
-  const req = http.get(options, (res) => {
-    console.log(`STATUS: ${res.statusCode}`);
+  const req = https.get(url, (res) => {
+    console.log(`${url}: ${res.statusCode}`);
   });
   req.on('error', (e) => {
     console.error(`problem with request: ${e.message}`);
