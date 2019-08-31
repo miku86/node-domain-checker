@@ -50,11 +50,11 @@ const isUrlReachable = (url) => {
     const { statusCode } = response;
 
     if (successCodes.includes(statusCode)) {
-      console.log(`${success(`${url}: ${statusCode}`)}`);
+      console.log(`${success(`${url} - is available`)}`);
     } else if (warningCodes.includes(statusCode)) {
-      console.log(`${warning(`${url}: ${statusCode}`)}`);
+      console.log(`${warning(`${url} - gets redirected`)}`);
     } else if (errorCodes.includes(statusCode)) {
-      console.log(`${error(`${url}: ${statusCode}`)}`);
+      console.log(`${error(`${url} - is NOT available`)}`);
     } else {
       console.log(`${url}: ${statusCode}`);
     }
