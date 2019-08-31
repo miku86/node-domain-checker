@@ -6,7 +6,8 @@ a node cli tool to check if a list of domains is reachable
 
 - clone repo
 - `npm install`
-- run `node index.js [url]`
+- update `urls.txt` with your urls, one per line
+- run `node index.js urls.txt`
 
 ## Contact
 
