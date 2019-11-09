@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/miku86/node-domain-checker#readme",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "follow-redirects": "^1.8.1"
   }
 }
